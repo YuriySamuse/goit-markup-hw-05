@@ -21,7 +21,7 @@
             <!-- nav-menu -->
                 <ul class="heder-nav-list list">
                     <li class="heder-item">
-                        <a class="heder-link link current" href="./index.html">Студия</a>
+                        <a class="heder-link current link" href="./index.html">Студия</a>
                     </li>
                     <li class="heder-item">
                         <a class="heder-link link" href="./portfolio.html">Портфолио</a>
@@ -59,7 +59,7 @@
         <section class="hero-section">
             <div class="hero-content container">
                 <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-                <button class="hero-btn" type="button">Заказать услугу</button>
+                <button class="hero-btn" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <!-- About -->
@@ -392,5 +392,11 @@
             </div>
         </div>    
     </footer>
+    <div class="backdrop is-hiden" data-modal>
+        <div class="modal">
+            <button class="modal-close-btn" data-modal-close>x</button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body> 
 </html>
