@@ -113,9 +113,7 @@ h1, h2, h3, p, ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-color);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .heder-link:hover,
 .heder-link:focus,
@@ -151,9 +149,7 @@ h1, h2, h3, p, ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .heder-cont-link:hover,
 .heder-cont-link:focus {
@@ -215,9 +211,7 @@ h1, h2, h3, p, ul {
   
   color: var(--btn-color);
   background-color: var(--accent-color);
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -376,9 +370,8 @@ h1, h2, h3, p, ul {
   align-items: center;
   justify-content: center;
   fill: #AFB1B8;
-  transition-property: background-color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 .masters-soc-link:hover,
 .masters-soc-link:focus  {
@@ -421,9 +414,7 @@ h1, h2, h3, p, ul {
   margin-left: var(--card-set-gep);
   margin-top: var(--card-set-gep);
   fill: #AFB1B8;
-  transition-property: border, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-item-link:hover, 
 .customers-item-link:focus {
@@ -472,9 +463,7 @@ h1, h2, h3, p, ul {
   padding: 6px 22px;
   height: 38px;
 
-  transition-property: color, background-color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter-btn:hover,
 .filter-btn:focus {
@@ -505,9 +494,7 @@ h1, h2, h3, p, ul {
   background-color: rgba(33, 150, 243, 0.9);
   height: 100%;
   transform: translateY(100%);
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-family: 'Roboto';
   font-weight: 400;
   font-size: 18px;
@@ -522,9 +509,7 @@ h1, h2, h3, p, ul {
   background-color: var(--btn-color);
   margin-right: 30px;
   margin-bottom: 30px;
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
 }
 .card-item:hover .card-backgraund-text,
@@ -611,9 +596,7 @@ h1, h2, h3, p, ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-cont:hover,
 .footer-cont:focus {
@@ -656,9 +639,7 @@ h1, h2, h3, p, ul {
   align-items: center;
   justify-content: center;
   fill: #FFFFFF;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-soc-icon {
   width: 20px;
@@ -676,10 +657,7 @@ h1, h2, h3, p, ul {
   background-color: rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 0;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms, visibility 250ms;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0) rotate(180deg);
@@ -693,7 +671,7 @@ h1, h2, h3, p, ul {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
