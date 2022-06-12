@@ -396,7 +396,7 @@ h1, h2, h3, p, ul {
   margin-top: calc(-1 * var(--card-set-gep));
   }
   
-.customers-item {
+.customers-item-link {
   width: 170px;
   height: 92px;
   display: flex;
@@ -408,9 +408,10 @@ h1, h2, h3, p, ul {
   margin-left: var(--card-set-gep);
   margin-top: var(--card-set-gep);
   fill: #AFB1B8;
+  transition: var(--design-animation);
 }
-.customers-item:hover, 
-.customers-item:focus {
+.customers-item-link:hover, 
+.customers-item-link:focus {
   border: 1px solid var(--accent-color);  
   fill: var(--accent-color);
   cursor: pointer;
