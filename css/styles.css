@@ -675,6 +675,15 @@ h1, h2, h3, p, ul {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: transparent
+  
+}
+.icon-colse-btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  fill: #000000;
 }
 
 .is-hidden {
