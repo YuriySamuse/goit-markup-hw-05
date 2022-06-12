@@ -10,7 +10,7 @@
   --card-set-gep: 30px;
   --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   --padin-botom-sect: 94px;
-  --design-animation: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 body {
@@ -113,6 +113,9 @@ h1, h2, h3, p, ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .heder-link:hover,
 .heder-link:focus,
@@ -148,6 +151,9 @@ h1, h2, h3, p, ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .heder-cont-link:hover,
 .heder-cont-link:focus {
@@ -208,10 +214,14 @@ h1, h2, h3, p, ul {
   height: 50px;
   
   color: var(--btn-color);
-  background: var(--accent-color);
+  background-color: var(--accent-color);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hero-btn:hover {
-  background: var(--acent-btn-hover);
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--acent-btn-hover);
 }
 
 /* -----------About---------- */
@@ -366,6 +376,9 @@ h1, h2, h3, p, ul {
   align-items: center;
   justify-content: center;
   fill: #AFB1B8;
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .masters-soc-link:hover,
 .masters-soc-link:focus  {
@@ -408,7 +421,9 @@ h1, h2, h3, p, ul {
   margin-left: var(--card-set-gep);
   margin-top: var(--card-set-gep);
   fill: #AFB1B8;
-  transition: var(--design-animation);
+  transition-property: border, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-item-link:hover, 
 .customers-item-link:focus {
@@ -456,6 +471,10 @@ h1, h2, h3, p, ul {
   border: 0;
   padding: 6px 22px;
   height: 38px;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter-btn:hover,
 .filter-btn:focus {
@@ -486,7 +505,9 @@ h1, h2, h3, p, ul {
   background-color: rgba(33, 150, 243, 0.9);
   height: 100%;
   transform: translateY(100%);
-  transition: var(--design-animation);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   font-family: 'Roboto';
   font-weight: 400;
   font-size: 18px;
@@ -501,6 +522,9 @@ h1, h2, h3, p, ul {
   background-color: var(--btn-color);
   margin-right: 30px;
   margin-bottom: 30px;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   
 }
 .card-item:hover .card-backgraund-text,
@@ -511,7 +535,7 @@ h1, h2, h3, p, ul {
 }
 .card-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: var(--design-animation);
+  
 }
 .card-item:nth-child(3n) {
   margin-right: 0;
@@ -587,6 +611,9 @@ h1, h2, h3, p, ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-cont:hover,
 .footer-cont:focus {
@@ -629,6 +656,9 @@ h1, h2, h3, p, ul {
   align-items: center;
   justify-content: center;
   fill: #FFFFFF;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-soc-icon {
   width: 20px;
@@ -646,6 +676,9 @@ h1, h2, h3, p, ul {
   background-color: rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 0;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms, visibility 250ms;
 }
 .backdrop.is-hidden .modal {
